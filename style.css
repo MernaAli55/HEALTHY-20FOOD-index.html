@@ -1,0 +1,144 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(Untitled6.png);
+    min-height: 100vh;
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.logo a
+{
+color:#d37d0c;
+font-size: 20px;
+font-weight:bolder;
+font-style: oblique;
+}
+nav button
+{
+background:#d37d0c;
+border: none;
+color: #fff;
+padding: 12px 35px;
+font-weight: 600;
+border-radius: 2rem;
+transition: 3s;
+
+}
+nav button:hover
+{
+    scale: 3;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(16, 16, 14);
+    color: #fff;
+
+}
+.navbar.logo a
+{
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-link 
+{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-link li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.nav-link li a:hover
+{
+    color: #f39c12;
+}
+.hamburger
+{
+    display: none;
+    flex-direction:column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span
+{
+    width: 30px ;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+@media(max-width:768px)
+{
+    .nav-link
+    {
+        position: absolute;
+        top: 70px;
+        left:0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        display: none;
+    }
+    .nav-link.active
+    {
+      display: flex;
+    }
+    .hamburger
+    {
+        display: flex;
+    }
+}
+.content
+{
+ position: absolute;
+ top: 35%;
+ left: 90px;    
+}
+h2
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.content button
+{
+    margin-top: 70px;
+    margin-left: 30px;
+    background: #d37d0c;
+    border: none;
+    color: #fff;
+    padding: 12px 35px ;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 2rem ;
+    transition: 3s;
+}
+.content button:hover
+{
+    scale: 3;
+}
